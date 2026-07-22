@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Warm near-black base */
+  --bg: #0c0b08;
+  --bg-elev: #14120c;
+  --surface: #1a1710;
+  --surface-2: #221e15;
+  --border: #2c2820;
+  --border-gold: rgba(198, 161, 91, 0.24);
+
+  /* Parchment text */
+  --text: #ece4d2;
+  --text-muted: #a99c82;
+  --text-faint: #7c725e;
+
+  /* Antique gold */
+  --gold: #c6a15b;
+  --gold-bright: #dcbd7c;
+  --gold-deep: #8a6d34;
+
+  --sand: #d9c7a3;
+  --danger: #c0503e;
+  --success: #86a35c;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-feature-settings: "ss01", "cv01";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Subtle parchment/paper grain over the whole app */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(140% 100% at 50% -10%, rgba(198, 161, 91, 0.08), transparent 55%),
+    radial-gradient(100% 60% at 100% 100%, rgba(138, 109, 52, 0.06), transparent 60%);
+}
+
+@layer base {
+  h1, h2, h3, h4 {
+    font-family: var(--font-display), Georgia, serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-shell px-5 sm:px-6 lg:px-8;
+  }
+
+  /* Small heraldic uppercase label */
+  .eyebrow {
+    @apply font-display text-[11px] uppercase tracking-heraldic text-gold;
+  }
+
+  .hairline {
+    height: 1px;
+    background-image: var(--gold-line, none);
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md font-sans text-sm font-semibold
+      transition-[transform,background-color,border-color,color,box-shadow] duration-200
+      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2
+      focus-visible:ring-offset-bg disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+  }
+  .btn-gold {
+    @apply btn bg-gold text-[#12100c] hover:bg-gold-bright active:scale-[0.98] shadow-[0_10px_30px_-12px_rgba(198,161,91,0.55)];
+  }
+  .btn-outline {
+    @apply btn border border-line-gold bg-transparent text-ink hover:border-gold hover:bg-[rgba(198,161,91,0.08)] active:scale-[0.98];
+  }
+  .btn-ghost {
+    @apply btn text-muted hover:text-ink hover:bg-[rgba(255,255,255,0.03)];
+  }
+  .btn-lg { @apply h-12 px-7 text-[15px]; }
+  .btn-md { @apply h-11 px-5; }
+  .btn-sm { @apply h-9 px-3.5 text-[13px]; }
+
+  .card {
+    @apply rounded-xl border border-line bg-surface shadow-card;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-line px-3 py-1 text-xs text-muted;
+  }
+
+  .input {
+    @apply h-11 w-full rounded-md border border-line bg-bg-elev px-3.5 text-[15px] text-ink
+      placeholder:text-faint transition-colors focus:border-gold focus:outline-none
+      focus:ring-1 focus:ring-gold;
+  }
+
+  .link-underline {
+    @apply relative text-muted transition-colors hover:text-ink after:absolute after:-bottom-1
+      after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
+
+/* Gold-tinted hare mascot (black-on-transparent PNG used as an alpha mask) */
+.hare-mark {
+  background-color: var(--gold);
+  -webkit-mask: url("/hare.png") center / contain no-repeat;
+  mask: url("/hare.png") center / contain no-repeat;
+}
+
+/* Intro modal motion */
+.modal-backdrop { animation: fade-in 0.3s ease-out both; }
+.modal-card { animation: modal-in 0.45s cubic-bezier(0.16, 1, 0.3, 1) both; }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes modal-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Emblem tile texture used on product media */
+.emblem-tile {
+  background:
+    radial-gradient(120% 120% at 50% 0%, rgba(198, 161, 91, 0.10), transparent 60%),
+    linear-gradient(180deg, #17140e 0%, #100e09 100%);
+}
+
+::selection {
+  background: rgba(198, 161, 91, 0.28);
+  color: #fff;
+}
+
+/* Thin gold scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb {
+  background: #2c2820;
+  border-radius: 999px;
+  border: 2px solid var(--bg);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--gold-deep); }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
