@@ -43,10 +43,7 @@ export default function HomePage() {
         <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gold-line opacity-40" />
         <div className="shell relative grid gap-12 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-24">
           <div className="animate-fade-up">
-            <div className="flex items-center gap-3">
-              <span className="h-px w-8 bg-gold-deep" />
-              <span className="eyebrow">Kolekce oblečení pro dobrodruhy</span>
-            </div>
+            <span className="eyebrow">Kolekce oblečení pro dobrodruhy</span>
             <h1 className="mt-5 font-display text-[40px] font-bold leading-[1.05] text-ink sm:text-[54px] lg:text-[60px]">
               Vyraž.<br />
               Poznávej.<br />
@@ -118,7 +115,6 @@ export default function HomePage() {
       {/* ── CATEGORIES ───────────────────────────────────── */}
       <section className="shell py-16 lg:py-20">
         <SectionHeading
-          eyebrow="Kolekce"
           title="Vyber si svou výbavu"
           intro="Od trička k ohni až po výbavu pro čtyřnohé členy družiny. Každý kus nese stejný znak."
         />
@@ -153,7 +149,7 @@ export default function HomePage() {
       <section className="border-y border-line bg-bg-elev/40">
         <div className="shell py-16 lg:py-20">
           <div className="flex flex-wrap items-end justify-between gap-4">
-            <SectionHeading eyebrow="Nejoblíbenější" title="Co nosí celá družina" />
+            <SectionHeading title="Co nosí celá družina" />
             <Link href="/obchod" className="btn-ghost btn-sm">
               Zobrazit vše <IconArrowRight className="h-4 w-4" />
             </Link>
@@ -179,15 +175,12 @@ export default function HomePage() {
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg/80 via-transparent to-transparent" />
-            <span className="absolute bottom-4 left-5 font-display text-[10px] uppercase tracking-heraldic text-sand/90 drop-shadow">
-              Malešov → Trosky · Český ráj
-            </span>
           </div>
           <div>
             <SectionHeading
               eyebrow="Družina na tahu"
               title="Kolekce pro ty, kdo míří dál"
-              intro="Přátelství. Příběhy. Cesta, na kterou se nezapomíná. Každé tričko nese ručně kreslenou mapu výpravy — a každá výprava svůj vlastní příběh."
+              intro="Přátelství. Příběhy. Cesta, na kterou se nezapomíná. Každé tričko nese ručně kreslenou mapu výpravy. A každá výprava svůj vlastní příběh."
             />
             <ul className="mt-7 space-y-4">
               {[
@@ -217,7 +210,7 @@ export default function HomePage() {
       {fresh.length > 0 && (
         <section className="border-t border-line bg-bg-elev/40">
           <div className="shell py-16 lg:py-20">
-            <SectionHeading eyebrow="Právě dorazilo" title="Novinky a limitované kusy" align="center" />
+            <SectionHeading title="Novinky a limitované kusy" align="center" />
             <div className="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-4">
               {fresh.map((p) => (
                 <ProductCard key={p.slug} product={p} />

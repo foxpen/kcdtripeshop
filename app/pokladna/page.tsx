@@ -9,9 +9,9 @@ import { IconCheck, IconArrowRight, IconShield, IconBag } from "@/components/Ico
 const FREE_SHIPPING = 1500;
 
 const DELIVERY = [
-  { id: "zasilkovna", name: "Zásilkovna", note: "výdejní místo · 1–2 dny", price: 79 },
-  { id: "dpd", name: "DPD kurýr", note: "na adresu · 1–2 dny", price: 99 },
-  { id: "ppl", name: "PPL ParcelShop", note: "výdejní místo · 1–2 dny", price: 69 },
+  { id: "zasilkovna", name: "Zásilkovna", note: "výdejní místo, 1-2 dny", price: 79 },
+  { id: "dpd", name: "DPD kurýr", note: "na adresu, 1-2 dny", price: 99 },
+  { id: "ppl", name: "PPL ParcelShop", note: "výdejní místo, 1-2 dny", price: 69 },
 ];
 
 const PAYMENT = [
@@ -73,7 +73,7 @@ export default function CheckoutPage() {
         </h1>
         <p className="mt-3 max-w-md text-[15px] leading-relaxed text-muted">
           Potvrzení jsme poslali na tvůj e-mail. Balíme tvou výbavu a brzy vyrazí na cestu.
-          Ať tě provází štěstí — audentes fortuna iuvat.
+          Ať tě provází štěstí. Audentes fortuna iuvat.
         </p>
         <p className="mt-6 font-display text-[13px] text-gold">
           Číslo objednávky: KCD-{Math.floor(100000 + Math.random() * 899999)}

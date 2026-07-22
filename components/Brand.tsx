@@ -14,7 +14,7 @@ export function Brand({
     <Link
       href="/"
       className={`group flex items-center gap-3 ${className}`}
-      aria-label="KCD TRIP — domů"
+      aria-label="KCD TRIP, domů"
     >
       <Image
         src="/logo.png"

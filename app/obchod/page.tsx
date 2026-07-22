@@ -4,7 +4,7 @@ import { CatalogClient } from "@/components/CatalogClient";
 
 export const metadata: Metadata = {
   title: "Obchod",
-  description: "Celá kolekce KCD TRIP — oblečení, doplňky a výbava pro dobrodruhy.",
+  description: "Celá kolekce KCD TRIP: oblečení, doplňky a výbava pro dobrodruhy.",
 };
 
 export default function ObchodPage() {

@@ -107,9 +107,6 @@ export function IntroModal() {
             className="object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/10 to-transparent md:bg-gradient-to-r md:from-transparent md:via-transparent md:to-surface" />
-          <span className="absolute bottom-3 left-4 font-display text-[10px] uppercase tracking-heraldic text-sand/90 drop-shadow">
-            Malešov → Trosky · Český ráj
-          </span>
         </div>
 
         {/* story */}
@@ -129,10 +126,10 @@ export function IntroModal() {
           </h2>
 
           <p id="intro-body" className="text-[14.5px] leading-relaxed text-muted">
-            KCD TRIP se nezrodil v žádné kanceláři. Vznikl na cestě — parta kamarádů vyrazila
+            KCD TRIP se nezrodil v žádné kanceláři. Vznikl na cestě. Parta kamarádů vyrazila
             napříč Českým rájem z Malešova až pod věže Trosek. Trasu jsme si nakreslili na záda
-            triček, k tomu heslo, které nás táhlo dál: <em className="text-sand">Audentes fortuna iuvat</em>{" "}
-            — štěstí přeje odvážným.
+            triček, k tomu heslo, které nás táhlo dál: <em className="text-sand">Audentes fortuna iuvat</em>.
+            Štěstí přeje odvážným.
           </p>
           <p className="text-[14.5px] leading-relaxed text-muted">
             Dnes je z toho kolekce pro každého, kdo má rád přátelství, oheň a příběhy, které se

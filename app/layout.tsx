@@ -22,14 +22,14 @@ const sans = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.kcdtrip.cz"),
   title: {
-    default: "KCD TRIP — Kolekce oblečení pro dobrodruhy",
-    template: "%s — KCD TRIP",
+    default: "KCD TRIP: Kolekce oblečení pro dobrodruhy",
+    template: "%s | KCD TRIP",
   },
   description:
     "Audentes fortuna iuvat. Prémiová kolekce oblečení a doplňků inspirovaná cestami, přátelstvím a příběhy, které se nezapomínají.",
   keywords: ["KCD TRIP", "oblečení", "dobrodruh", "merch", "mikina", "tričko", "kšiltovka"],
   openGraph: {
-    title: "KCD TRIP — Kolekce pro dobrodruhy",
+    title: "KCD TRIP: Kolekce pro dobrodruhy",
     description: "Není to jen výlet. Je to příběh. Audentes fortuna iuvat.",
     type: "website",
     locale: "cs_CZ",

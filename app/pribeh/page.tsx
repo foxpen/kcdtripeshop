@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: "Náš příběh",
   description:
-    "Proč vznikla KCD TRIP — kolekce pro dobrodruhy, přátelství a příběhy, které se nezapomínají.",
+    "Proč vznikla KCD TRIP: kolekce pro dobrodruhy, přátelství a příběhy, které se nezapomínají.",
 };
 
 const VALUES = [
@@ -60,24 +60,20 @@ export default function PribehPage() {
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg/70 via-transparent to-transparent" />
-          <span className="absolute bottom-4 left-5 font-display text-[10px] uppercase tracking-heraldic text-sand/90 drop-shadow">
-            Malešov → Trosky · Český ráj
-          </span>
         </div>
         <div>
           <SectionHeading
-            eyebrow="Kde to začalo"
             title="Družina na tahu"
             intro="Začalo to jedním výletem, který se protáhl. Mapou nakreslenou na ubrousku a slibem, že příště zajdeme dál."
           />
           <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-muted">
             <p>
               Chtěli jsme oblečení, které vydrží déšť i oslavu, které si obléknete ráno na cestu a
-              večer u ohně. Žádné jednorázové kousky — prémiové materiály, poctivá výšivka a detaily,
+              večer u ohně. Žádné jednorázové kousky. Prémiové materiály, poctivá výšivka a detaily,
               které dělají rozdíl.
             </p>
             <p>
-              Každá kolekce je limitovaná. Když je vyprodáno, je vyprodáno — protože ani ten stejný
+              Každá kolekce je limitovaná. Když je vyprodáno, je vyprodáno. Protože ani ten stejný
               příběh se nikdy neopakuje úplně stejně.
             </p>
           </div>
@@ -91,7 +87,6 @@ export default function PribehPage() {
       <section className="border-y border-line bg-bg-elev/40">
         <div className="shell py-16 lg:py-20">
           <SectionHeading
-            eyebrow="Naše hodnoty"
             title="Na čem nám záleží"
             align="center"
           />

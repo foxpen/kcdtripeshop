@@ -109,7 +109,7 @@ export function CatalogClient() {
             <IconSearch className="h-6 w-6" />
           </span>
           <p className="mt-4 font-display text-lg text-ink">Zatím nic v této kategorii</p>
-          <p className="mt-1 text-[14px] text-muted">Zkus jinou kategorii — družina roste každý týden.</p>
+          <p className="mt-1 text-[14px] text-muted">Zkus jinou kategorii. Družina roste každý týden.</p>
           <button onClick={() => setActive("vse")} className="btn-outline btn-sm mt-5">
             Zobrazit vše
           </button>

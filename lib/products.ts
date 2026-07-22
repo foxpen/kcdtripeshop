@@ -55,14 +55,14 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "tricko-mapa",
-    name: "Tričko Mapa – Družina na tahu",
+    name: "Tričko Mapa - Družina na tahu",
     category: "obleceni",
     price: 649,
     badge: "Limitovaná edice",
     bestseller: true,
     short: "Přední logo, zadní ručně kreslená mapa výpravy.",
     description:
-      "Na zádech nese ručně kreslenou mapu s nápisem „Družina na tahu\" – každá cesta má svůj příběh a ten svůj si poneseš s sebou. Přední strana zdobená malým logem, měkká písková bavlna.",
+      "Na zádech nese ručně kreslenou mapu s nápisem „Družina na tahu\". Každá cesta má svůj příběh a ten svůj si poneseš s sebou. Přední strana zdobená malým logem, měkká písková bavlna.",
     features: ["100% bavlna", "180 g/m²", "Potisk: přední logo / zadní mapa", "Unisex střih"],
     colors: ["Písková", "Černá"],
     sizes: APPAREL_SIZES,
@@ -127,7 +127,7 @@ export const PRODUCTS: Product[] = [
     short: "Vyšívané ponožky, které ujdou pár mil navíc.",
     description:
       "Pohodlné ponožky se špetkou elastanu pro dokonalé sezení a vyšitým detailem znaku. Balení, které potěší každého člena družiny.",
-    features: ["80% bavlna / 17% polyamid / 3% elastan", "Velikosti 39–46", "Výšivka", "Zesílená pata a špička"],
+    features: ["80% bavlna / 17% polyamid / 3% elastan", "Velikosti 39-46", "Výšivka", "Zesílená pata a špička"],
     colors: ["Černá", "Písková"],
     rating: 4.8,
     reviews: 73,
@@ -142,7 +142,7 @@ export const PRODUCTS: Product[] = [
     short: "Měkké bavlněné body s vyšitým znakem.",
     description:
       "Pro nejmladší členy družiny. Jemná bavlna šetrná k pokožce, praktické zapínání a vyšité logo KCD TRIP. Příběh začíná už v kolébce.",
-    features: ["100% bavlna", "Velikosti 56–92", "Šetrné k pokožce", "Vyšité logo"],
+    features: ["100% bavlna", "Velikosti 56-92", "Šetrné k pokožce", "Vyšité logo"],
     colors: ["Černá"],
     sizes: ["56", "62", "68", "74", "80", "86", "92"],
     rating: 4.9,
@@ -157,7 +157,7 @@ export const PRODUCTS: Product[] = [
     short: "Zmenšená verze legendární mikiny pro malé dobrodruhy.",
     description:
       "Ta samá kvalita jako u velkých, jen v malém. Teplá kapuce, měkký vnitřek a písková barva, na které je vidět každé dobrodružství. Ať malý cestovatel nikdy neprochladne.",
-    features: ["80% bavlna / 20% polyester", "Velikosti 74–98", "Kapuce", "Vyšité logo"],
+    features: ["80% bavlna / 20% polyester", "Velikosti 74-98", "Kapuce", "Vyšité logo"],
     colors: ["Písková"],
     sizes: ["74", "80", "86", "92", "98"],
     rating: 4.9,
@@ -171,7 +171,7 @@ export const PRODUCTS: Product[] = [
     short: "Hebká čepice, která zahřeje malou hlavu.",
     description:
       "Jemná bavlněná čepice pro nejmenší dobrodruhy s decentním znakem. Příjemná i na citlivou pokožku a akorát teplá na chladná rána.",
-    features: ["100% bavlna", "Velikost 0–2 roky", "Hebký úplet", "Vyšitý detail"],
+    features: ["100% bavlna", "Velikost 0-2 roky", "Hebký úplet", "Vyšitý detail"],
     colors: ["Písková"],
     rating: 4.7,
     reviews: 29,
@@ -214,7 +214,7 @@ export const PRODUCTS: Product[] = [
     short: "Teplá mikina, aby pes vydržel u ohně stejně dlouho jako ty.",
     description:
       "Když se ochladí, i pes ocení vrstvu navíc. Měkká mikina s kapucí a vyšitým logem, střih respektující pohyb. Pro parťáky, kteří nikdy nezůstávají v autě.",
-    features: ["80% bavlna / 20% polyester", "Velikosti XS–XL", "Střih pro pohyb", "Vyšité logo"],
+    features: ["80% bavlna / 20% polyester", "Velikosti XS-XL", "Střih pro pohyb", "Vyšité logo"],
     colors: ["Černá"],
     sizes: ["XS", "S", "M", "L", "XL"],
     rating: 4.7,
